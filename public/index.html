@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Tailwind Source</title>
+</head>
+<body>
+    <div class="lg:container lg:mx-auto mb-5 bg-indigo-500 p-5 text-white">
+        <div class="flex flex-wrap gap-2 child:center ">
+            <p class="flex-initial font-sans bg-fuchsia-300 w-40 aspect-square text-center text-xl">Flex 1</p>
+            <p class="flex-initial font-sans bg-fuchsia-300 w-40 aspect-square text-center text-xl">Flex 2</p>
+            <p class="flex-initial font-sans bg-fuchsia-300 w-40 aspect-square text-center text-xl">Flex 3</p>
+        </div>
+    </div>
+    <div class="lg:container lg:mx-auto mb-5  p-5 border-indigo-500">
+        <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-12 gap-3  child:bg-red-200 child:text-gray-800 child:h-40  ">
+            <p>Col 1</p>
+            <p>Col 2</p>
+            <p class="xl:col-span-4 xl:col-start-4 ">Col 3</p>
+            <p>Col 4</p>
+            <p>Col 5</p>
+        </div>
+    </div>
+    <div class="lg:container lg:mx-auto border mb-5 border-indigo-500 p-5 text-white">
+        <button class="btn btn-green" >Click</button>
+        <button class="btn btn-blue">Click</button>
+    </div>
+    <div class="lg:container lg:mx-auto mb-5 border border-indigo-500 p-5 h-[13.5rem]">
+       <a href="#" >Click on Me</a>
+       <span class="hover:make-red text-blue-300">Hello World</span>
+    </div>
+</body>
+</html>

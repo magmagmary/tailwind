@@ -1,5 +1,40 @@
-body{
-    background: lightskyblue;
-    padding: 0;
-    margin: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    a{
+        @apply text-blue-700 font-medium tracking-wider	underline underline-offset-4
+    }
+}
+
+@layer components{
+    .btn{
+        @apply  text-xl rounded-md text-center px-6 py-3
+    }
+    .btn-green{
+        @apply bg-green-400 text-white hover:bg-green-700
+    }
+    .btn-blue{
+        @apply bg-blue-400 text-white hover:bg-blue-700
+    }
+}
+
+@layer utilities{
+    .center{
+        @apply flex items-center justify-center
+    }
+    .make-red{
+        @apply text-red-400
+    }
+}
+
+@screen sm{
+    .make-red{
+        @apply text-red-400
+    }
+}
+
+input::placeholder{
+    color:red
 }
